@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="mock-xapi-test-suite.xml" />
+	<munit:test name="mock-xapi-test-suite-mock-xapiFlowTest" doc:id="7c4591b3-5e08-4693-902f-7d7b22ab5a86" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to mock-xapiFlow" doc:id="868c253a-a714-4c35-8be6-caf8e560c9d4" name="mock-xapiFlow"/>
+		</munit:execution>
+	</munit:test>
+
+
+</mule>
