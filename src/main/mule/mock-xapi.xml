@@ -12,4 +12,13 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
         <logger level="INFO" doc:name="Logger" doc:id="d7679364-5858-421f-be9d-37d013f54e3c" />
         <logger level="INFO" doc:name="Logger" doc:id="5ce56d8a-6636-4c82-bb3c-cedc587be3a9" />
     </flow>
+	<flow name="mock-xapiFlow1" doc:id="35fad7aa-dd36-4a83-a7f4-33011998b026" >
+		<scheduler doc:name="Scheduler" doc:id="9bf2f273-7c54-4659-8dff-7ddf665ef311" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="a8633bc6-1cf9-4a11-a6f5-2e6ef0897acf" />
+		<logger level="INFO" doc:name="Logger" doc:id="dcd9f62a-dcbb-4acb-93d9-f5d34b4472fb" />
+	</flow>
 </mule>
